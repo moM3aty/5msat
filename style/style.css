@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+body{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: 'Amiri', serif;
+}
+nav{
+    background-color: gray;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 10;
+    font-size: 20px;
+}
+nav ul {
+    display: flex;
+    margin: -5px;
+}
+nav ul li {
+    list-style: none;
+    padding: 15px;
+    justify-content: space-evenly;
+    margin: auto;
+}
+nav ul img{
+   width: 150px;
+   padding: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li:hover {
+    background-color: rgb(99, 97, 97);
+    cursor: pointer;
+}
+section p{
+    position: relative;
+    top: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+.container {
+    position: relative;
+    flex-wrap:wrap;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 90%;
+}
+.container div{
+    margin: 20px ;
+    padding: 50px;
+    width: 300px;
+    height: 250px;
+}
+.container div p{
+    text-align: center;
+    color: white;
+    font-size: 35px ;
+}
+.container div:first-child{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.473),rgba(0, 0, 0, 0.5)), url("/images/works.jpg");
+}
+.container  div:nth-child(2){
+    background-image:linear-gradient(rgba(0, 0, 0, 0.473),rgba(0, 0, 0, 0.5)), url("/images/program.jpg");
+}
+.container  div:nth-child(3){
+    background-image:linear-gradient(rgba(0, 0, 0, 0.473),rgba(0, 0, 0, 0.5)), url("/images/training.jpg");
+}
+.container div:nth-child(4){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.473),rgba(0, 0, 0, 0.5)) ,url("/images/marketing.jpg");
+}
+.container div:nth-child(5){
+    background-image:linear-gradient(rgba(0, 0, 0, 0.473),rgba(0, 0, 0, 0.5)), url("/images/video-design.jpg");
+}
+.container div:nth-child(6){
+    background-image:linear-gradient(rgba(0, 0, 0, 0.473),rgba(0, 0, 0, 0.5)), url("/images/design.jpg");
+}
+.container div:hover{
+    cursor: pointer;
+}
