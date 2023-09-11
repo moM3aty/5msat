@@ -4,49 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Font.Awesome.5.15.4/Content/Content/all.css">
-    <link rel="stylesheet" href="./style/style.css">
     <link rel="icon" type="icon/png" href="./images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
     <title>خمسات</title>
 </head>
 <body >
-    <header>
+    <section>
         <nav>
             <div>
                 <ul>
-                    <li><a href=""><i class="fas fa-bars" style="font-size: 27px;"></i></a></li>
-                    <img src="./images/khmsat.png"  alt="خمسات"> 
-                    <li><a href=""><i class="fas fa-plus"></i> خدمه جديده </a></li>
-                    <li><a href=""><i class="fas fa-boxes"></i> تصنيفات </a></li>
-                    <li><a href=""><i class="fas fa-folder-open"></i> مشتريات </a></li>
-                    <li><a href=""><i class="fas fa-truck"></i> الطلبات الوارده </a></li>
+                    <div class="query">
+                        <li  >
+                            <i onclick="eventClick()" class="fas fa-bars btn-List" style="font-size: 27px;"></i>
+                        </li>
+                        <img src="./images/khmsat.png"  alt="خمسات"> 
+                    </div>
+                    
+                    <li class="list"><a href=""><i class="fas fa-plus"></i> خدمه جديده </a></li>
+                    <li class="list"><a href=""><i class="fas fa-boxes"></i> تصنيفات </a></li>
+                    <li class="list"><a href=""><i class="fas fa-folder-open"></i> مشتريات </a></li>
+                    <li class="list"><a href=""><i class="fas fa-truck"></i> الطلبات الوارده </a></li>
                 </ul>
             </div>
         </nav>
-        <section>
-            <p>كافة الخدمات الإبداعية والاحترافية لتطوير وتنمية أعمالك</p>
-        </section>
-        <section class="container">
-                <div>
-                    <p>أعمال</p> 
-                </div>
-                <div>
-                    <p>برمجه وتطوير</p>
-                </div>
-                <div>
-                    <p>تسويق الكتروني</p>
-                </div>
-                <div>
-                    <p>تدريب عن بعد</p>
-                </div>
-                <div>
-                    <p>تصميم فيديو</p>
-                </div>
-                <div>
-                    <p>تصميم</p>
-                </div>
+    </section>
+    <section>
+        <p>كافة الخدمات الإبداعية والاحترافية لتطوير وتنمية أعمالك</p>
+    </section>
+    <section class="container">
+            <div>
+                <p>أعمال</p> 
             </div>
-        </section>
-    </header>
+            <div>
+                <p>برمجه وتطوير</p>
+            </div>
+            <div>
+                <p>تسويق الكتروني</p>
+            </div>
+            <div>
+                <p>تدريب عن بعد</p>
+            </div>
+            <div>
+                <p>تصميم فيديو</p>
+            </div>
+            <div>
+                <p>تصميم</p>
+            </div>
+        </section>    
+        <script >
+                function eventClick ()
+            {
+                var ele = document.querySelectorAll( 'li' );
+                for(i=0;i< ele.length ; i++){
+                    ele[i].classList.toggle('list');
+                    ele[i].classList.toggle('list-Show');
+                    
+                }
+    }
+</script>
 </body>
 </html>
